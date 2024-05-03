@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        height: 100vh;
+        background: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+      .container {
+        margin: 100px 0;
+        display: flex;
+      }
+      h1 {
+        margin-right: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+        text-shadow: 2px 2px 0 black;
+      }
+      li {
+        list-style: none;
+        margin: 10px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .entry {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Simon's API resume</h1>
+      <hr />
+      <ul>
+        <% for(let i = 0; i < resumeData.length; i++){%>
+        <li class="list">
+          <a href="/resume/<%=i;%>"><%=resumeData[i].title%> </a>
+        </li>
+        <%} %>
+      </ul>
+    </div>
+    <div class="entry">
+      <a href="/resume/new">Create New Entry</a>
+    </div>
+    <footer>
+      <p>&copy; 2024 - Simon Muyomba -</p>
+    </footer>
+  </body>
+</html>

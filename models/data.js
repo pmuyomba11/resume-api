@@ -1,0 +1,58 @@
+const data = [
+  {
+    title: "Junior software Engineer",
+    company: "ZTE cooperation, Uganda",
+    startDate: "10/24/2020",
+    endDate: "10/25/2022",
+    workSkills: "MongoDB,SQL,Mongoose, React",
+    location: "Entebbe, Uganda",
+    fullTime: true,
+  },
+  {
+    title: "Residential Counselor",
+    company: "Riverside Community Care",
+    startDate: "01/01/2017",
+    endDate: "10/23/2022",
+    workSkills: "CPR,First Aid,CPI,MAP",
+    location: "Andover, MA",
+    fullTime: true,
+  },
+  {
+    title: "Scrum master intern",
+    company: "Zofi Cash",
+    startDate: "09/04/2021",
+    endDate: "10/25/2022",
+    workSkills: "Jira,Scrum,Kanban, Slack",
+    location: "Los Angeles, California",
+    fullTime: false,
+  },
+  {
+    title: "Mental counselor",
+    company: "Hamptead Hospital",
+    startDate: "04/24/2024",
+    endDate: "current",
+    workSkills: "CPI, CPR/FA, MAP ",
+    location: "Hampstead, New Hampshire",
+    fullTime: true,
+  },
+  {
+    title: "Driver",
+    company: "Uber",
+    startDate: "10/24/2020",
+    endDate: "10/25/2023",
+    workSkills: "Safety, Time management",
+    location: "Haverhill, MA",
+    fullTime: false,
+  },
+  {
+    title: "Private Caregiver",
+    company: "Self employed",
+    startDate: "05/24/2023",
+    endDate: "04/05/2024",
+    workSkills:
+      "Companionship, Medication management, Medical appointment scheduler",
+    location: "Winchester, MA",
+    fullTime: true,
+  },
+];
+module.exports = data;

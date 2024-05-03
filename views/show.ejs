@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Page</title>
+    <style>
+      body {
+        background: #ddd;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-bottom: 100px auto;
+      }
+      h1 {
+        text-align: center;
+        margin: 50px 0;
+      }
+      .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        /* transform: translateX(-50%); */
+      }
+      a {
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><%= entity.title %></h1>
+
+    <div class="container">
+      Job title: <%= entity.title %> <br />
+      Company: <%= entity.company %><br />
+      start Date : <%= entity.startDate %><br />
+      End Date : <%= entity.endDate %><br />
+      Work Skills : <%= entity.workSkills %><br />
+      Location: <%= entity.location %><br />
+      Fulltime: <%= entity.fullTime %><br />
+    </div>
+    <div class="link">
+      <a href="/resume">Back to Main Page</a>
+    </div>
+    <!-- <div>
+      <footer>
+        <p>&copy; 2024 - Simon Muyomba -</p>
+      </footer>
+    </div> -->
+
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
